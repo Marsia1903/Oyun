@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harita Savaş Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Harita Savaş Oyunu</h1>
+        <div id="map">
+            <!-- Harita üzerindeki şehirler -->
+            <div class="city" id="city1" onclick="selectCity('city1')">Şehir 1</div>
+            <div class="city" id="city2" onclick="selectCity('city2')">Şehir 2</div>
+            <div class="city" id="city3" onclick="selectCity('city3')">Şehir 3</div>
+        </div>
+
+        <div id="city-info">
+            <h2>Şehir Bilgisi</h2>
+            <p id="city-name">Seçilen Şehir: -</p>
+            <p id="army-count">Ordu Sayısı: -</p>
+            <p id="fortification-status">Tahkimat Durumu: -</p>
+            <button id="produce-army" onclick="produceArmy()">Ordu Üret</button>
+            <button id="build-fortification" onclick="buildFortification()">Tahkimat İnşa Et</button>
+            <button id="move-army" onclick="moveArmy()">Ordu Taşı</button>
+        </div>
+        <button id="next-turn" onclick="nextTurn()">Sonraki Tur</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
