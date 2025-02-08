@@ -13,23 +13,33 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 500px;
     text-align: center;
 }
 
 #map {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
     margin-bottom: 20px;
 }
 
+.map-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 .city {
+    position: absolute;
     padding: 10px;
     background-color: #4CAF50;
     color: white;
     border-radius: 5px;
     cursor: pointer;
 }
+
+#city1 { top: 30%; left: 20%; }
+#city2 { top: 50%; left: 50%; }
+#city3 { top: 70%; left: 30%; }
 
 #city-info {
     margin-top: 20px;
